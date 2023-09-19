@@ -1,0 +1,43 @@
+nav {
+    background-color: #0D4C92;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #0D4C92;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+    align-content: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+body {
+    background-color: #A0E4CB;
+    font-family: 'Nabla', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
