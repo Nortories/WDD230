@@ -1,12 +1,13 @@
 @media (min-width: 768px) {
 
+    
     img {
         max-width: 400px;
         border: black 10px solid;
     }
 
-    nav ul {
-        display: flex;
+    nav ul { 
+    display: flex;
         justify-content: space-around;
     }
 
@@ -20,7 +21,6 @@
     }
 
     .card {
-        background-color: #fff;
         flex: 1 1 100%;
         margin: 0.5em;
     }

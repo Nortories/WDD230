@@ -1,3 +1,4 @@
+
 .wrapper{
     display: flex;
     justify-content: center;
@@ -7,7 +8,7 @@
 img {
     max-width: 100%;
     max-height: 600px;
-    border: black 10px solid;
+    border: #27496D 20px solid;
 }
 
 h1 {
@@ -17,7 +18,7 @@ h1 {
 }
 
 nav {
-    background-color: #0D4C92;
+    background-color: #142850;
     margin: 0 auto;
     max-width: 800px;
 }
@@ -37,12 +38,14 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #fff;
-    color: #0D4C92;
-}
+    width: 50%;
+    background-color: #512B81;
+    color: #fff;
+    text-align: center;
+    margin-left: 25%;}
 
 nav a:active {
-    background-color: #092f5c;
+    background-color: #00A8CC;
     color: #fff;
 }
 
@@ -53,17 +56,19 @@ main {
 }
 
 .card {
-    background-color: #fff;
+    color: #fff;
+    background-color: #142850;
     padding: 1em;
     margin-bottom: 1em;
 }
 
 body {
-    background-color: #A0E4CB;
+    background-color: #0C7B93;
     font-family: 'Nabla', cursive;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
 }
 footer {
+    width: 100%;
     background-color: rgb(207, 20, 14);
 }
