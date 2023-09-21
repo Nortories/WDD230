@@ -1,5 +1,10 @@
 @media (min-width: 768px) {
 
+    img {
+        max-width: 400px;
+        border: black 10px solid;
+    }
+
     nav ul {
         display: flex;
         justify-content: space-around;
@@ -11,22 +16,12 @@
     }
 
     .main-colimn {
-        display: flex;      
+        display: flex;
     }
 
     .card {
         background-color: #fff;
         flex: 1 1 100%;
         margin: 0.5em;
-    }
-
-    /* Your CSS rules go here */
-
-    footer {
-        background-color: rgb(207, 20, 14);
-    }
-
-    h1 {
-        font-size: 5em;
     }
 }

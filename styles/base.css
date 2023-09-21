@@ -1,3 +1,21 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img {
+    max-width: 100%;
+    max-height: 600px;
+    border: black 10px solid;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: auto;
+}
+
 nav {
     background-color: #0D4C92;
     margin: 0 auto;
@@ -23,6 +41,11 @@ nav a:hover {
     color: #0D4C92;
 }
 
+nav a:active {
+    background-color: #092f5c;
+    color: #fff;
+}
+
 main {
     margin: 0 auto;
     max-width: 800px;
@@ -40,4 +63,7 @@ body {
     font-family: 'Nabla', cursive;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
+}
+footer {
+    background-color: rgb(207, 20, 14);
 }

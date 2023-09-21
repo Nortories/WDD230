@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description-="This is a portfolio site for Joshua Sooaemalelagi in WDD 230">
-    <meta author="Joshua Sooaemalelagi">
+    <meta name="description" content="This is a portfolio site for Joshua Sooaemalelagi in WDD 230">
+    <meta name="author" content="Joshua Sooaemalelagi">
     <title>Joshua Sooaemalelagi - WDD 230 - Web Frontend Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Roboto+Mono&family=Roboto:ital@1&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/larger.css">
     <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+
 
 <body>
     <header>
+        <div class="wrapper">
         <img src="./images/headshot.jpg" alt="head-shot">
         <h1>Joshua Sooaemalelagi</h1>
+        </div>
     </header>
     <nav>
         <ul>
@@ -29,6 +32,7 @@
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
+        <hr>
         <div class="main-colimn">
             <section class="card">
                 <h3>Learning Activities</h3>
@@ -39,9 +43,10 @@
         </div>
     </main>
     <footer>
-        <p>Copyright © Joshua Sooaemalelagi | All rights reserved 2023</p>
-        <p id="lastModified"></p>
+        <p id="current-year"></p>
+        <p id="last-modified">Last modified: </p>
     </footer>
+    <script src="./scripts/getDates.js"></script>
 </body>
 
 </html>
