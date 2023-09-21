@@ -1,11 +1,5 @@
 @media (min-width: 768px) {
 
-    
-    img {
-        max-width: 400px;
-        border: black 10px solid;
-    }
-
     nav ul { 
     display: flex;
         justify-content: space-around;
@@ -21,7 +15,8 @@
     }
 
     .card {
+        width: 100%;
         flex: 1 1 100%;
-        margin: 0.5em;
+        margin: 3em;
     }
 }
