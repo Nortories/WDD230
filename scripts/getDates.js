@@ -10,5 +10,5 @@ const currentYearElement = document.getElementById("current-year");
 const lastModifiedElement = document.getElementById("last-modified");
 
 // Update the text content
-currentYearElement.textContent += "Copyright © | All rights reserved | " + currentYear;
+currentYearElement.innerHTML += "Copyright © | All rights reserved | " + currentYear + " | \uD83C\uDDFA\uD83C\uDDF8";
 lastModifiedElement.textContent += lastModifiedDate;
