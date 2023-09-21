@@ -1,14 +1,16 @@
-
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 img {
+    box-shadow: #b6c71d 0px 0px 20px   ;
     max-width: 100%;
     max-height: 600px;
-    border: #27496D 20px solid;
+    border: #fff 2px solid;
+    border-radius: 10px;
 }
 
 h1 {
@@ -18,9 +20,12 @@ h1 {
 }
 
 nav {
+    border-radius: 10px;
+    box-shadow: #512B81 0px 0px 10px;
     background-color: #142850;
     margin: 0 auto;
     max-width: 800px;
+    border: #fff 1px solid;
 }
 
 nav ul {
@@ -42,11 +47,15 @@ nav a:hover {
     background-color: #512B81;
     color: #fff;
     text-align: center;
-    margin-left: 25%;}
+    margin-left: 25%;
+    border: #fff 1px solid;
+    border-radius: 10px;
+}
 
 nav a:active {
     background-color: #00A8CC;
     color: #fff;
+    border-radius: 10px;
 }
 
 main {
@@ -56,10 +65,46 @@ main {
 }
 
 .card {
+    box-shadow: #512B81 0px 0px 10px;
     color: #fff;
-    background-color: #142850;
+    background-color:#00A8CC;
     padding: 1em;
     margin-bottom: 1em;
+    border-radius: 10px;
+    border: #fff 1px solid;
+}
+.card h3 {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #142850;
+    text-align: center;
+    border-radius: 5px;
+}
+.card ul{
+    margin: 0;
+    background-color: #0C7B93;
+    border-radius: 10px;
+    margin: 0;
+}
+.card li {
+    padding: 1em;    
+}
+.card a{
+    padding: 1em;
+    color: #fff;
+}
+.card a:hover{
+    background-color: #512B81;
+    color: #fff;
+    text-align: center;
+    border: #fff 1px solid;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.card a:active {
+    background-color: #00A8CC;
+    color: #fff;
+    border-radius: 10px;
 }
 
 body {
@@ -68,7 +113,20 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
 }
+
 footer {
+    border-radius: 10px;
+    margin-top: 10em;
+    box-shadow: #142850 0px 0px 10px;
+    border: #fff 1px solid;
+    text-align: center;
     width: 100%;
-    background-color: rgb(207, 20, 14);
+    background-color: rgb(187, 159, 68);
+}
+
+footer p {
+    color: #fff;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
 }

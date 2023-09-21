@@ -6,9 +6,9 @@ const lastModified = document.lastModified;
 const lastModifiedDate = lastModified.split(" ")[0];
 
 // Get elements by ID from the HTML
-const currentYearElement = document.getElementById("current-year");
-const lastModifiedElement = document.getElementById("last-modified");
+const copyright = document.getElementById("copyright");
+const lastModifiedElement = document.getElementById("lastUpdated");
 
 // Update the text content
-currentYearElement.innerHTML += "Copyright © | All rights reserved | " + currentYear + "&#x1F1FA;&#x1F1F8;";
-lastModifiedElement.textContent += lastModifiedDate;
+copyright.innerHTML += `Joshua Sooaemalelagi | Copyright © ${currentYear} &#x1F1FA;&#x1F1F8; | All rights reserved`;
+lastModifiedElement.innerHTML +=  `Last Modified: ${lastModifiedDate}`;
