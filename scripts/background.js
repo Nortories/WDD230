@@ -22,7 +22,7 @@ function createNode() {
 
   document.body.appendChild(node); // Set the node to the body of the HTML to display it on the screen
 
-  // Animation loop (OpenAi contribution)
+  // Animation loop (contributed by OpenAi)
   function moveNode() {
     const radians = angle * (Math.PI / 180); // Convert angle to radians (OpenAi contribution)
     const deltaX = Math.cos(radians) * velocity; // Calculate the change in x-axis position (OpenAi contribution)
