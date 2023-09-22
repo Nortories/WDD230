@@ -1,132 +1,146 @@
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+body {
+  background-image: url(/images/pageBG.jpg);
+  background-size: cover;
+  font-family: "Nabla", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
-img {
-    box-shadow: #512B81 0px 0px 20px 10px;
-    max-width: 100%;
-    max-height: 600px;
-    border: #fff 2px solid;
-    border-radius: 10px;
+.node{
+    position: absolute;
+    z-index: -1;
+}
+body img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header img {
+  box-shadow: #512b81 0px 0px 20px 10px;
+  max-width: 100%;
+  max-height: 300px;
+  border: #fff 2px solid;
+  border-radius: 10px;
 }
 
 h1 {
-    font-size: 3em;
-    text-align: center;
-    margin-top: auto;
+  font-size: 3em;
+  color: darkgoldenrod;
+  text-shadow: #b43c17 0px 0px 10px;
+  text-align: center;
 }
 
 nav {
-    border-radius: 10px;
-    box-shadow: #512B81 0px 0px 20px 1px;
-    background-color: #142850;
-    margin: 0 auto;
-    max-width: 800px;
-    border: #fff 1px solid;
+  border-radius: 10px;
+  box-shadow: #512b81 0px 0px 20px 1px;
+  background-color: #142850;
+  margin: 0 auto;
+  max-width: 800px;
+  border: #fff 1px solid;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
 }
 
 nav a {
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: 1em;
-    text-decoration: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
 }
 
 nav a:hover {
-    width: 50%;
-    background-color: #512B81;
-    color: #fff;
-    text-align: center;
-    margin-left: 25%;
-    border: #fff 1px solid;
-    border-radius: 10px;
+  width: 50%;
+  background-color: #512b81;
+  color: #fff;
+  text-align: center;
+  margin-left: 25%;
+  border-radius: 10px;
 }
 
 nav a:active {
-    background-color: #00A8CC;
-    color: #fff;
-    border-radius: 10px;
+  background-color: #00a8cc;
+  color: #fff;
+  border-radius: 10px;
 }
 
 main {
-    margin: 0 auto;
-    max-width: 800px;
-    align-content: center;
+  margin: 0 auto;
+  max-width: 800px;
+  align-content: center;
+}
+main h2 {
+  color: darkgoldenrod;
+  text-shadow: #b43c17 0px 0px 10px;
+  margin-left: 1em;
 }
 
 .card {
-    box-shadow: #512B81 0px 0px px 1px;
-    color: #fff;
-    background-color:#00A8CC;
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 10px;
-    border: #fff 1px solid;
+  box-shadow: #512b81 0px 0px 15px 1px;
+  color: #fff;
+  background-color: #00a8cc;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  border: #fff 1px solid;
 }
 .card h3 {
-    margin-top: 0;
-    padding-top: 0;
-    background-color: #142850;
-    text-align: center;
-    border-radius: 5px;
+  margin-top: 0;
+  padding-top: 0;
+  background-color: #142850;
+  text-align: center;
+  border-radius: 5px;
 }
-.card ul{
-    margin: 0;
-    background-color: #0C7B93;
-    border-radius: 10px;
-    margin: 0;
+.card ul {
+  margin: 0;
+  background-color: #0c7b93;
+  border-radius: 10px;
+  margin: 0;
 }
 .card li {
-    padding: 1em;    
+  padding: 1em;
 }
-.card a{
-    padding: 1em;
-    color: #fff;
+.card a {
+  padding: 1em;
+  color: #fff;
 }
-.card a:hover{
-    background-color: #512B81;
-    color: #fff;
-    text-align: center;
-    border: #fff 1px solid;
-    border-radius: 10px;
-    margin-left: 10px;
+.card a:hover {
+  background-color: #512b81;
+  color: #fff;
+  text-align: center;
+  border: #fff 1px solid;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 .card a:active {
-    background-color: #00A8CC;
-    color: #fff;
-    border-radius: 10px;
-}
-
-body {
-    background-color: #272b2c;
-    font-family: 'Nabla', cursive;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Mono', monospace;
+  background-color: #00a8cc;
+  color: #fff;
+  border-radius: 10px;
 }
 
 footer {
-    border-radius: 10px;
-    margin-top: 10em;
-    box-shadow: #142850 0px 0px 10px;
-    border: #fff 1px solid;
-    text-align: center;
-    width: 100%;
-    background-color: rgb(187, 159, 68);
+  border-radius: 10px;
+  margin-top: 10em;
+  box-shadow: #142850 0px 0px 10px;
+  border: #fff 1px solid;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(187, 159, 68);
 }
 
 footer p {
-    color: #fff;
-    font-size: 10px;
-    margin: 0;
-    padding: 0;
+  color: #fff;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
 }

@@ -10,5 +10,5 @@ const copyright = document.getElementById("copyright");
 const lastModifiedElement = document.getElementById("lastUpdated");
 
 // Update the text content
-copyright.innerHTML += `Joshua Sooaemalelagi | Copyright © ${currentYear} &#x1F1FA;&#x1F1F8; | All rights reserved`;
-lastModifiedElement.innerHTML +=  `Last Modified: ${lastModifiedDate}`;
+copyright.innerHTML += `Copyright © ${currentYear} Joshua Sooaemalelagi | All rights reserved`;
+lastModifiedElement.innerHTML +=  `Last Modified: ${lastModifiedDate}` + " v0.0.1";
