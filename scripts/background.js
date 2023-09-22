@@ -15,7 +15,7 @@ function createNode() {
   const angle = Math.random() * 360; // Random angle that the node will move in
   const velocity = Math.random(); // Random speed that the node will move at
 
-  // After 5 seconds, remove the node from the DOM (Document Object Model)
+  // After 5 seconds, remove the node from the DOM (Document Object Model) otherwise I'll have a bunch of nodes on the screen and crash the browser
   setTimeout(() => {
     node.remove();
   }, 5000);
@@ -54,5 +54,5 @@ function getRandomColor() {
   return color;
 }
 
-// Create nodes periodically
+// Create nodes periodically in milliseconds also used to first call the createNode function
 setInterval(createNode, 50);
