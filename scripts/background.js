@@ -20,7 +20,7 @@ function createNode() {
     node.remove();
   }, 5000);
 
-  document.body.appendChild(node); // Set the node to the body of the HTML to display it on the screen
+  document.getElementById("background-nodes").appendChild(node); // Set the node at the end of the body of the HTML to display it on the screen, also allows to colapse the div while inspecting the HTML
 
   // Animation loop (contributed by OpenAi)
   function moveNode() {
