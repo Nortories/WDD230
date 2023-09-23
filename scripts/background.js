@@ -11,7 +11,7 @@ function createNode() {
   node.style.left = startX + "px"; //set the node's left position to the random x-axis position
   node.style.top = startY + "px"; //set the node's top position to the random y-axis position
 
-  // Random direction
+  // Random direction to shoot the node in
   const angle = Math.random() * 360; // Random angle that the node will move in
   const velocity = Math.random(); // Random speed that the node will move at
 
