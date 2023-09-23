@@ -1,11 +1,11 @@
 function createNode() {
   const node = document.createElement("div"); // Create a new node as a div in html
-  node.className = "node"; // Set the class name to 'node' for styling in CSS
-  const size = Math.floor(Math.random() * 10) + 1; // Random size from 1px to 10px
+  node.className = "node"; // Set the class name to 'node' for styling purposes in CSS
+  const size = Math.floor(Math.random() * 10) + 1; // Random size of the node from 1px to 10px
   const color = getRandomColor(); // Get a random color
-  node.style.width = size + "px";
-  node.style.height = size + "px";
-  node.style.backgroundColor = color; // Set random color to the node background
+  node.style.width = size + "px"; // set the node's width
+  node.style.height = size + "px"; // set the node's height
+  node.style.backgroundColor = color; // Set the random generated to the node background
   const startX = Math.random() * window.innerWidth; // Random start position on the x-axis
   const startY = Math.random() * window.innerHeight; // Random start position on the y-axis
   node.style.left = startX + "px"; //set the node's left position to the random x-axis position
