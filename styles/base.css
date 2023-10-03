@@ -22,7 +22,7 @@ body img {
 }
 
 header img {
-  box-shadow: #808080 0px 0px 20px 10px;
+  box-shadow: #A5C9FF 0px 0px 20px 10px;
   max-width: 100%;
   max-height: 300px;
   border: #fff 2px solid;
@@ -31,14 +31,14 @@ header img {
 
 h1 {
   font-size: 3em;
-  color: darkgoldenrod;
-  text-shadow: #b43c17 0px 0px 10px;
+  text-shadow: #A5C9FF 0px 0px 30px;
   text-align: center;
+  font-family: 'Dela Gothic One', cursive;
 }
 
 nav {
   border-radius: 10px;
-  box-shadow: #808080 0px 0px 20px 1px;
+  box-shadow: #A5C9FF 0px 0px 20px 1px;
   margin: 0 auto;
   max-width: 800px;
   border: #fff 1px solid;
@@ -63,10 +63,12 @@ nav a {
 
 nav a:hover {
   width: 50%;
-  background-color: #808080;
-  color: #fff;
+  background-color: #A5C9FF;
+  color: #333333 ;
   text-align: center;
   margin-left: 25%;
+  padding: .75em;
+  border: #fff 1px solid;
   border-radius: 10px;
 }
 
@@ -82,31 +84,33 @@ main {
   align-content: center;
 }
 main h2 {
-  color: darkgoldenrod;
-  text-shadow: #b43c17 0px 0px 10px;
+  font-family: 'Dela Gothic One', cursive;
+  text-shadow: #ffffff 0px 0px 15px;
   margin-left: 1em;
 }
 
 .card {
-  box-shadow: #808080 0px 0px 15px 1px;
-  color: #fff;
-  background-color: #00a8cc;
+  box-shadow: #A5C9FF 0px 0px 15px 1px;
+  color: #333333  ;
+  background-color: #333;
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 10px;
   border: #fff 1px solid;
 }
 .card h3 {
+  font-family: 'Dela Gothic One', cursive;
   margin-top: 0;
-  padding-top: 0;
-  background-color: #142850;
+  padding-top: 1em;
+  background-color: #BFBFBF;
   text-align: center;
   height: 3em;
   border-radius: 5px;
 }
 .card ul {
+  list-style-type: none;
   margin: 0;
-  background-color: #0c7b93;
+  background-color: #BFBFBF;
   border-radius: 10px;
   margin: 0;
 }
@@ -118,8 +122,8 @@ main h2 {
   color: #fff;
 }
 .card a:hover {
-  background-color: #808080;
-  color: #fff;
+  background-color: #A5C9FF;
+  color: #333333 ;
   text-align: center;
   border: #fff 1px solid;
   border-radius: 10px;
@@ -134,7 +138,7 @@ main h2 {
 footer {
   border-radius: 10px;
   margin-top: 10em;
-  box-shadow: #142850 0px 0px 10px;
+  box-shadow: #3F3F3F 0px 0px 10px;
   border: #fff 1px solid;
   text-align: center;
   width: 100%;
