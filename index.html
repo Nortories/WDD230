@@ -26,6 +26,9 @@
 </head>
 
 <body>
+    <div id="mode">
+        ☑️
+    </div>
     <header>
         <div class="wrapper">
             <a href="#"><img src="./images/headshot.jpg" alt="head-shot" id="headshot" onclick="swapImage()"></a>
@@ -33,21 +36,22 @@
         </div>
     </header>
     <nav>
-        <ul>
+	<a id="menu" href="#"></a>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="chamber-site-plan.html">Site Plan</a></li>
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
+
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
         <div class="main-colimn">
-            <section class="card">
+            <section class="card dark-mode">
                 <h3>Learning Activities</h3>
                 <ul>
-
                     <li><a href="./lesson2/lesson2.html">Lesson 2</a></li>
                     <li><a href="#">Lesson 3</a></li>
                     <li><a href="#">Lesson 4</a></li>
@@ -55,14 +59,12 @@
                     <li><a href="#">Lesson 6</a></li>
                 </ul>
             </section>
-            <section class="card" id="information">
+            <section class="card dark-mode" id="information">
                 <h3>Information</h3>
-                <ul class="weather">
-                    <div id="weather-container">
-                        <h1>Weather in <span id="city-name">London</span></h1>
+                <ul id="weather-container">
+                        <h1>Weather in <span id="city-name">PlaceHolder</span></h1>
                         <p><strong>Temperature:</strong> <span id="temperature">Loading...</span>°F</p>
                         <p><strong>Description:</strong> <span id="description">Loading...</span></p>
-                    </div>
                 </ul>
             </section>
         </div>
@@ -72,6 +74,8 @@
         <p id="copyright"></p>
         <p id="lastUpdated"></p>
     </footer>
+    <script src="./scripts/darkMode.js"></script>
+    <script src="./scripts/hamburger.js"></script>
     <script src="./scripts/getDates.js"></script>
     <script src="scripts/swapPhoto.js"></script>
     <script src="scripts/background.js"></script>

@@ -1,3 +1,11 @@
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
 body {
   background-image: url(http://nortories.github.io/wdd230/images/pexels-pixabay-220201.jpg);
   background-size: cover;
@@ -64,25 +72,46 @@ nav a {
   margin-left: 5px;
 }
 
-nav a:hover {
-  /* width: 50%; */
-  background-color: #A5C9FF;
-  color: #333333;
-  /* text-align: center; */
-  /* margi
-  n-left: 25%; */
-  /* padding: .75em; */
-  transition: all 0.5s ease-in-out;
-  transform: scale(1.5);
-  border: #fff 1px solid;
-  border-radius: 10px;
-}
-
 nav a:active {
   background-color: #00a8cc;
   color: #fff;
   border-radius: 10px;
 }
+
+
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	padding: .5rem;
+  margin-bottom: -.5em;
+}    
+#menu::before {
+	content: "≡";
+}
+.navigation li {
+	display: none;
+}
+.show li {
+	display: block;
+}
+#menu.show::before {
+	content: "❎";
+}
+
+nav a:hover {
+    /* width: 50%; */
+    background-color: #A5C9FF;
+    color: #333333;
+    /* text-align: center; */
+    /* margi
+    n-left: 25%; */
+    /* padding: .75em; */
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+    border: #fff 1px solid;
+    border-radius: 10px;
+  }
 
 main {
   margin: 0 auto;
@@ -125,6 +154,15 @@ main h2 {
   padding: 0;
 }
 
+.dark-mode ul.show {
+  list-style-type: none;
+  margin: 0;
+  background-color: #000000;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+}
+
 .card li {
   padding: 1em;
 }
@@ -152,6 +190,15 @@ main h2 {
   color: #fff;
   border-radius: 10px;
 }
+
+.dark-mode ul.show{
+  background-color: #000000;
+  color: #fff;
+}
+.dark-mode h3.show{
+  background-color: #000000;
+  color: #fff;
+}
 .weather{
   display: flex;
   justify-content: center;
@@ -159,7 +206,6 @@ main h2 {
 #weather-container{
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: center;
   padding-top: 0;
@@ -168,7 +214,6 @@ main h2 {
 footer {
   border-radius: 10px;
   margin-top: 10em;
-  box-shadow: #3F3F3F 0px 0px 10px;
   border: #fff 1px solid;
   text-align: center;
   width: 100%;

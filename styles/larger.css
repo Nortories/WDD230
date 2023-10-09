@@ -30,3 +30,31 @@
     margin: 3em;
   }
 }
+@media (min-width: 668px) {
+  .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+  nav a:hover {
+    /* width: 50%; */
+    background-color: #A5C9FF;
+    color: #333333;
+    /* text-align: center; */
+    /* margi
+    n-left: 25%; */
+    /* padding: .75em; */
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.5);
+    border: #fff 1px solid;
+    border-radius: 10px;
+  }
+}
