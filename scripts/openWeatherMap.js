@@ -6,7 +6,7 @@ const weatherElement = document.getElementById('weather-container');
 
 // Get the weather data from the API
 async function getWeather() {
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&forecast?id=524901&appid=${apiKey}`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&forecast?id=524901&appid=${apiKey}`);
     const data = await response.json();
 
     if (response.ok) {
