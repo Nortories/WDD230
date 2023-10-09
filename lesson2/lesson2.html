@@ -27,6 +27,9 @@
 
 
 <body>
+    <div id="mode">
+        ☑️
+    </div>
     <header>
         <div class="wrapper">
             <a href="#"><img src="../images/headshot.jpg" alt="head-shot" id="headshot" onclick="swapImage()"></a>
@@ -34,7 +37,8 @@
         </div>
     </header>
     <nav>
-        <ul>
+        <a id="menu" href="#"></a>
+        <ul class="navigation">
             <li><a href="../index.html">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="../chamber-site-plan.html">Site Plan</a></li>
@@ -124,6 +128,8 @@
         <p id="copyright"></p>
         <p id="lastUpdated"></p>
     </footer>
+    <script src="../scripts/darkMode.js"></script>
+    <script src="../scripts/hamburger.js"></script>
     <script src="../scripts/getDates.js"></script>
     <script src="../scripts/swapPhoto.js"></script>
     <script src="../scripts/background.js"></script>
