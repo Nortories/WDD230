@@ -30,6 +30,8 @@
     margin: 3em;
   }
 }
+
+
 @media (min-width: 668px) {
   .navigation {
 		display: flex;

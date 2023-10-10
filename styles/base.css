@@ -1,14 +1,16 @@
 #mode {
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-	font-size: 3rem;
-	cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
 }
 
 body {
   background-image: url(http://nortories.github.io/wdd230/images/pexels-pixabay-220201.jpg);
   background-size: cover;
+  background-position: center; /* This centers the background image */
+  background-repeat: no-repeat;
   font-family: "Nabla", cursive;
   font-family: "Roboto", sans-serif;
   font-family: "Roboto Mono", monospace;
@@ -32,7 +34,7 @@ body img {
 }
 
 header img {
-  box-shadow: #A5C9FF 0px 0px 20px 10px;
+  box-shadow: #a5c9ff 0px 0px 20px 10px;
   max-width: 100%;
   max-height: 300px;
   border: #fff 2px solid;
@@ -41,15 +43,15 @@ header img {
 
 h1 {
   font-size: 3em;
-  text-shadow: #A5C9FF 0px 0px 30px;
+  text-shadow: #a5c9ff 0px 0px 30px;
   text-align: center;
-  font-family: 'Dela Gothic One', cursive;
+  font-family: "Dela Gothic One", cursive;
 }
 
 nav {
-  font-family: 'Dela Gothic One', cursive;
+  font-family: "Dela Gothic One", cursive;
   border-radius: 10px;
-  box-shadow: #A5C9FF 0px 0px 20px 1px;
+  box-shadow: #a5c9ff 0px 0px 20px 1px;
   margin: 0 auto;
   max-width: 800px;
   border: #fff 1px solid;
@@ -78,40 +80,38 @@ nav a:active {
   border-radius: 10px;
 }
 
-
-
 #menu {
-	display: block;
-	font-size: 2rem;
-	padding: .5rem;
-  margin-bottom: -.5em;
-}    
+  display: block;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin-bottom: -0.5em;
+}
 #menu::before {
-	content: "≡";
+  content: "≡";
 }
 .navigation li {
-	display: none;
+  display: none;
 }
 .show li {
-	display: block;
+  display: block;
 }
 #menu.show::before {
-	content: "❎";
+  content: "❎";
 }
 
 nav a:hover {
-    /* width: 50%; */
-    background-color: #A5C9FF;
-    color: #333333;
-    /* text-align: center; */
-    /* margi
+  /* width: 50%; */
+  background-color: #a5c9ff;
+  color: #333333;
+  /* text-align: center; */
+  /* margi
     n-left: 25%; */
-    /* padding: .75em; */
-    transition: all 0.5s ease-in-out;
-    transform: scale(1.1);
-    border: #fff 1px solid;
-    border-radius: 10px;
-  }
+  /* padding: .75em; */
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+  border: #fff 1px solid;
+  border-radius: 10px;
+}
 
 main {
   margin: 0 auto;
@@ -120,13 +120,13 @@ main {
 }
 
 main h2 {
-  font-family: 'Dela Gothic One', cursive;
+  font-family: "Dela Gothic One", cursive;
   text-shadow: #ffffff 0px 0px 15px;
   margin-left: 1em;
 }
 
 .card {
-  box-shadow: #A5C9FF 0px 0px 15px 1px;
+  box-shadow: #a5c9ff 0px 0px 15px 1px;
   color: #333333;
   background-color: #333;
   padding: 1em;
@@ -136,10 +136,10 @@ main h2 {
 }
 
 .card h3 {
-  font-family: 'Dela Gothic One', cursive;
+  font-family: "Dela Gothic One", cursive;
   margin-top: 0;
   padding-top: 1em;
-  background-color: #BFBFBF;
+  background-color: #bfbfbf;
   text-align: center;
   height: 3em;
   border-radius: 5px;
@@ -148,7 +148,7 @@ main h2 {
 .card ul {
   list-style-type: none;
   margin: 0;
-  background-color: #BFBFBF;
+  background-color: #bfbfbf;
   border-radius: 10px;
   margin: 0;
   padding: 0;
@@ -173,7 +173,7 @@ main h2 {
 }
 
 .card a:hover {
-  background-color: #A5C9FF;
+  background-color: #a5c9ff;
   color: #333333;
   /* text-align: center; */
   border: #fff 1px solid;
@@ -191,19 +191,19 @@ main h2 {
   border-radius: 10px;
 }
 
-.dark-mode ul.show{
+.dark-mode ul.show {
   background-color: #000000;
   color: #fff;
 }
-.dark-mode h3.show{
+.dark-mode h3.show {
   background-color: #000000;
   color: #fff;
 }
-.weather{
+.weather {
   display: flex;
   justify-content: center;
 }
-#weather-container{
+#weather-container {
   padding: 20px;
   border-radius: 8px;
   width: 300px;

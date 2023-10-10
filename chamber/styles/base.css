@@ -1,0 +1,155 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+a,
+nav {
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+    color: #cecb28;
+    text-shadow: #ffffff 0px 0px 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1em; /* Gap between items */
+  padding-top: 5em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Set a background color for the entire page */
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+}
+
+#hero-img {
+  background-image: url("../images/braggcreek-hd.jpg");
+  background-size: 101% 100%; /* This stretches the image to fit the full width and height */
+  background-position: center; /* This centers the background image */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  margin: 1em;
+  max-width: 100%;
+  padding-bottom: 15em;
+  border: 3px solid #ddd;
+  border-radius: 15px;
+}
+
+
+
+/* Style the header */
+header {
+  grid-row: 1;
+  grid-column: 2/5;
+  color: #000000;
+  text-align: center;
+  padding: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  color: #007bff;
+  display: block;
+  text-decoration: none;
+  font-size: larger;
+  font-family: "Kanit", sans-serif;
+}
+
+li {
+  padding: 1em;
+  margin-left: 2em;
+}
+
+nav a:hover {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
+nav a:active {
+  background-color: #00a8cc;
+  color: #fff;
+  border-radius: 10px;
+}
+h2 {
+  color: #ff5733;
+}
+/* Style individual sections */
+section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+}
+section h2{
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+}
+footer p{
+    color: #ffffff;
+}
+
+
+@media (max-width: 771px) {
+  .wrapper-item {
+    grid-row: 1;
+    grid-column: 1/2;
+    padding-left: 2em;
+  }
+
+  #menu {
+    font-size: 2rem;
+  }
+  #menu::before {
+    content: "≡";
+  }
+  .navigation li {
+    display: none;
+  }
+  .show li {
+    display: block;
+  }
+  #menu.show::before {
+    content: "❎";
+  }
+}
+
+.lazyloaded {
+    position: absolute;
+    min-height: 300px;
+    padding-bottom: 100em;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://visitbraggcreek.com/wp-content/themes/truemarket/assets/dist/images/illustration-wood-lillies.png'); /* Replace with your image path */
+    background-size:contain; 
+    z-index: -1;
+    mix-blend-mode: multiply;
+}
+
