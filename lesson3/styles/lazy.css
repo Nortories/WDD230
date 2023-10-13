@@ -1,0 +1,9 @@
+*{
+    background-color: rgb(44, 94, 94);
+}
+
+main{
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
