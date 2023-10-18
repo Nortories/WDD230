@@ -1,0 +1,67 @@
+#icon-img{
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    flex-direction: row;
+    padding: 2em;
+  }
+  #headshot {
+    margin-right: 4em;
+  }
+  h1 {
+    vertical-align: middle;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .main-colimn {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    justify-content: space-between;
+    flex: 0 0 25%;
+    margin: 1em;
+  }
+}
+@media (min-width: 668px) {
+  .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+  nav a:hover {
+    /* width: 50%; */
+    background-color: #A5C9FF;
+    color: #333333;
+    /* text-align: center; */
+    /* margi
+    n-left: 25%; */
+    /* padding: .75em; */
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.5);
+    border: #fff 1px solid;
+    border-radius: 10px;
+  }}

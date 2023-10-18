@@ -13,14 +13,28 @@
         <h1>Lazy Load</h1>
     </header>
     <main>
-        <img src="http://placekitten.com/g/400/600" alt="kitten place holder images" loading="lazy" width="400" height="600" />
-        <img src="https://placedog.net/400/600" alt="dog place holder images" loading="lazy" width="400" height="600" />
-        <img src="https://placebear.com/400/600" alt="bear place holder images" loading="lazy" width="400" height="600"/>
-        <img src="http://placekitten.com/g/400/601" alt="kitten place holder images" loading="lazy" width="400" height="600"/>
-        <img src="https://placedog.net/400/602" alt="dog place holder images" loading="lazy" width="400" height="600"/>
-        <img src="https://placebear.com/400/603" alt="bear place holder images" loading="lazy" width="400" height="600"/>
+        <div class="image-container">
+            <h2>Lazy Load Images</h2>
+            <p>Images are not loaded until they are in the viewport. They will fade in from a black background.</p>
+            <img src="http://placekitten.com/g/400/600" alt="kitten place holder images" loading="lazy" width="400"
+                height="600" />
+            <img src="https://placedog.net/400/600" alt="dog place holder images" loading="lazy" width="400"
+                height="600" />
+            <img src="https://placebear.com/400/600" alt="bear place holder images" loading="lazy" width="400"
+                height="600" />
+            <img src="http://placekitten.com/g/400/601" alt="kitten place holder images" loading="lazy" width="400"
+                height="600" />
+            <img src="https://placedog.net/400/602" alt="dog place holder images" loading="lazy" width="400"
+                height="600" />
+            <img src="https://placebear.com/400/603" alt="bear place holder images" loading="lazy" width="400"
+                height="600" />
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastUpdated"></p>
+    </footer>
+    <script src="./scripts/getDates.js"></script>
 </body>
 
 </html>
