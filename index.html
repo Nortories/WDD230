@@ -50,6 +50,15 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="./images/SLC-temple-small.webp">
+                <img src="./images/SLC-temple-large.webp" alt="hero-image" id="hero-image">
+            </picture>
+            <div class="herolabel">
+                <p>SLC Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
         <div class="main-colimn">
@@ -65,7 +74,7 @@
             </section>
             <section class="card dark-mode" id="information">
                 <h3>Information</h3>
-                <ul id="weather-container">
+                <ul id="weather-container" class="weather-title">
                     <h1>Weather in <span id="city-name">Loading</span></h1>
                     <p><strong>Temperature:</strong> <span id="temperature">Loading...</span>°F</p>
                     <p><strong>Description:</strong> <span id="description">Loading...</span></p>
