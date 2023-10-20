@@ -115,7 +115,7 @@ nav a:hover {
 
 main {
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 800px;
   align-content: center;
 }
 
@@ -131,7 +131,6 @@ picture{
   justify-content: center;
   align-items: center;
 
-  margin: 10px;
   max-width:100%;
   max-height: 200px auto;
   align-content: center;
@@ -198,6 +197,7 @@ main h2 {
   padding: 1em;
   white-space: nowrap;
   color: #000000;
+  text-shadow: #ffffff 0px 0px 5px;
 }
 
 .card a:hover {
