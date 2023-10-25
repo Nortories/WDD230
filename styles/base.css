@@ -132,7 +132,6 @@ picture{
   align-items: center;
 
   max-width:100%;
-  max-height: 200px auto;
   align-content: center;
 }
 
@@ -141,7 +140,6 @@ picture{
   white-space: nowrap;
 	top: 3%;
 	right: 10%;
-  
 }
 
 main h2 {
