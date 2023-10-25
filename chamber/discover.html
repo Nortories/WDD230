@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta title="Bragg-Creek Discovery" />
+    <meta title="Bragg-Creek Chamber Discovery" />
     <meta author="Joshua Sooaemalelagi" />
     <meta name="description" content="This is a portfolio site for Joshua Sooaemalelagi in WDD 230" />
 
@@ -56,67 +56,59 @@
         <div class="main-grid">
             <div class="main-colimn">
                 <section class="main-card">
-                    <picture class="centered-picture">
+                    <picture class="centered-picture", class="picture-select">
                         <source media="(max-width: 320px)" srcset="https://picsum.photos/id/806/320/400">
                         <source media="(max-width: 600px)" srcset="https://picsum.photos/id/806/1000/800">
                         <source media="(max-width: 1000px)" srcset="https://picsum.photos/id/806/1440/800">
                         <img src="https://picsum.photos/id/806/1920/720" alt="mountains" loading="lazy" width="700" height="700">
                     </picture>
-                    <p>Come climb Table Top Mountain</p>
+                    <a href="#"><p>Come climb Table Top Mountain</p></a>
                 </section>
                 <section class="main-card">
-                    <picture class="centered-picture">
+                    
+                    <picture class="centered-picture", class="picture-select">
                         <source media="(max-width: 320px)" srcset="https://picsum.photos/id/96/320/401">
                         <source media="(max-width: 600px)" srcset="https://picsum.photos/id/96/1000/801">
                         <source media="(max-width: 1000px)" srcset="https://picsum.photos/id/96/1440/801">
                         <img src="https://picsum.photos/id/96/1920/721" alt="gaming" loading="lazy" width="700" height="700">
                     </picture>
-                    <p>Play some games at the local arcade</p>
+                    <a href="#"><p>Play some games at the local arcade</p></a>
                 </section>
                 <section class="main-card">
-                    <picture class="centered-picture">
+                    <picture class="centered-picture", class="picture-select">
                         <source media="(max-width: 320px)" srcset="https://picsum.photos/id/770/320/402">
                         <source media="(max-width: 600px)" srcset="https://picsum.photos/id/770/1000/802">
                         <source media="(max-width: 1000px)" srcset="https://picsum.photos/id/770/1440/802">
                         <img src="https://picsum.photos/id/770/1920/722" alt="parcore" loading="lazy" width="700" height="700">
                     </picture>
-                    <p>Try out some parcore</p>
+                    <a href="#"><p>Try out some parcore</p></a>
                 </section>
                 <section class="main-card">
-                    <picture class="centered-picture">
+                    <picture class="centered-picture", class="picture-select">
                         <source media="(max-width: 320px)" srcset="https://picsum.photos/id/401/321/400">
                         <source media="(max-width: 600px)" srcset="https://picsum.photos/id/401/1001/800">
                         <source media="(max-width: 1000px)" srcset="https://picsum.photos/id/401/1441/800">
                         <img src="https://picsum.photos/id/401/1920/723" alt="air-ballon" loading="lazy" width="700" height="700">
                     </picture>
-                    <p>Ride in a hot air ballon</p>
+                    <a href="#"><p>Ride in a hot air ballon</p></a>
                 </section>
                 <section class="main-card">
-                    <picture class="centered-picture">
+                    <picture class="centered-picture", class="picture-select">
                         <source media="(max-width: 320px)" srcset="https://picsum.photos/id/986/322/400">
                         <source media="(max-width: 600px)" srcset="https://picsum.photos/id/986/1002/800">
                         <source media="(max-width: 1000px)" srcset="https://picsum.photos/id/986/1442/800">
                         <img src="https://picsum.photos/id/986/1921/720" alt="lake-view" loading="lazy" width="700" height="700">
                     </picture>
-                    <p>Enjoy the lake view</p>
+                    <a href="#"><p>Enjoy the lake view</p></a>
                 </section>
                 <section class="main-card">
-                    <picture class="centered-picture">
+                    <picture class="centered-picture", class="picture-select">
                         <source media="(max-width: 320px)" srcset="https://picsum.photos/id/795/323/400">
                         <source media="(max-width: 600px)" srcset="https://picsum.photos/id/795/1003/800">
                         <source media="(max-width: 1000px)" srcset="https://picsum.photos/id/795/1443/800">
                         <img src="https://picsum.photos/id/795/1922/720" alt="woods" loading="lazy" width="700" height="700">
                     </picture>
-                    <p>Take a walk in the woods</p>
-                </section>
-
-                <section class="main-card" id="chamber-events">
-                    <h2>Upcoming Events</h2>
-                    <ul>
-                        <li>Business Networking Luncheon - October 15th</li>
-                        <li>Annual Chamber Gala - November 20th</li>
-                        <li>Small Business Workshop - December 5th</li>
-                    </ul>
+                    <a href="#"><p>Take a walk in the woods</p></a>
                 </section>
             </div>
             <div class="side-column">
@@ -130,27 +122,27 @@
                     <a href="#">Learn More</a>
                 </section>
 
-                <section class="side-card"">
-            <div class=" card-content">
-                    <h2>Weather card</h2>
-                    <p>Weather content for the side card.</p>
-                    <a href="#">Link to weather</a>
+                <section class="side-card" id="local-weather">
+                    <h2>Local Weather</h2>
+                        <h3>Weather in <span id="city-name">Loading</span></h3>
+                        <ul>
+                            <li>Temperature: <span id="temperature">Loading...</span>°F</li>
+                            <li>Description: <span id="description">Loading...</span></li>
+                        </ul>
+             </section>
 
+                <section class="side-card" id="site-views">
+                    <h2>Welcome</h2>
+                    <ul>
+                        <li>Visit Count: <span id="visits">Loading...</span></li>
+                        <li id="visit-message">
+
+                        </li>
+                    </ul>
                 </section>
-            </div>
-        </div>
-        </div>
-        <section>
-            <h2>Company Spotlights</h2>
-            <div class="main-grid">
-                <section class="spotlights">company 1</section>
-                <section class="spotlights">company 2</section>
-                <section class="spotlights">company 3</section>
-                <section class="spotlights">company 4</section>
-                <section class="spotlights">company 5</section>
-            </div>
-        </section>
 
+            </div>
+        </div>
     </main>
     <div class="lazyloaded"></div>
     <footer>
@@ -160,6 +152,8 @@
     </footer>
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/hamburger.js"></script>
+    <script src="./scripts/openWeatherMap.js"></script>
+    <script src="./scripts/numberOfVisits.js"></script>
 </body>
 
 </html>
