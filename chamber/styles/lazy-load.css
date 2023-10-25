@@ -1,14 +1,4 @@
-* {
-    background-color: rgb(44, 94, 94);
-}
 
-.image-container {
-    display: grid;
-    justify-content: center;
-    gap: 20px;
-
-
-}
 
 img {
     opacity: 0;
@@ -18,13 +8,20 @@ img {
 
 @keyframes fadeAnimation {
     0% {
-        color: black;
+        color: rgb(0, 0, 0);
         opacity: 0;
         background-color: rgb(0, 0, 0);
+
     }
 
     100% {
         opacity: 1;
         background-color: transparent;
     }
+}
+img {
+    animation-name: fadeAnimation;
+    animation-duration: 10s; /* This means the animation will last 5 seconds */
+    animation-timing-function: ease; 
+    animation-fill-mode: forwards;
 }
