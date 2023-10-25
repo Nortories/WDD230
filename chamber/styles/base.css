@@ -91,6 +91,26 @@ nav a:active {
 h2 {
   color: #ff5733;
 }
+
+.centered-picture {
+  display: flex;           /* Establishes flex container */
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 300px;           /* Set to your desired container height */
+  width: 100%;             /* Set to your desired container width */
+  overflow: hidden;        /* In case the image is larger than the container */
+}
+
+.centered-picture img {
+  display: block; /* Remove inline-block whitespace */
+  max-width: 100%; /* Ensures the image does not exceed the container width */
+  max-height: 100%; /* Ensures the image does not exceed the container height */
+}
+
+picture {
+  background-color: #000000;
+}
+
 /* Style individual sections */
 section {
   background-color: #fff;
