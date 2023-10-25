@@ -95,6 +95,11 @@ h2 {
 .main-card {
   position: relative;
 }
+/* This is the normal state for the <p> tag */
+.main-card p {
+  transform: scale(1); /* Default scale */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
 
 .centered-picture {
   display: flex;           /* Establishes flex container */
