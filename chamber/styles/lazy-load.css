@@ -25,3 +25,15 @@ img {
     animation-timing-function: ease; 
     animation-fill-mode: forwards;
 }
+
+.main-card p {
+    position: absolute; /* This positions the <p> relative to its container */
+    top: 80%; /* This positions the <p> 80% from the top of the container */    
+    left: 50%; /* This positions the <p> 50% from the left of the container */
+    transform: translate(-50%, -50%); /* This centers the <p> both vertically and horizontally on the top and left edges */
+    z-index: 1; /* This ensures the text is above the image */
+    color: white; /* This makes the text white */
+    background-color: rgb(0, 0, 0, 0.5); /* This adds a semi-transparent black background to the text */
+    padding: 5px 10px; /* Adds a bit of padding around the text */
+    border-radius: 8px; /* Optional: rounds the corners of the background */
+}
