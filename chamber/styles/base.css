@@ -92,6 +92,10 @@ h2 {
   color: #ff5733;
 }
 
+.main-card {
+  position: relative;
+}
+
 .centered-picture {
   display: flex;           /* Establishes flex container */
   justify-content: center; /* Centers horizontally */

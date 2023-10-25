@@ -1,68 +1,77 @@
+@media (min-width: 1200px) {
+  .wrapper {
+      gap: 55em; /* Gap between items */
+    }
+  }
 @media (min-width: 865px) {
   .wrapper {
-    display: grid;
-    flex-wrap: wrap; /* Allow wrapping to next line */
-    gap: 1em; /* Gap between items */
-  }
+      display: grid;
+      flex-wrap: wrap; /* Allow wrapping to next line */
+      gap: 1em; /* Gap between items */
+    }
+
   #logo {
-    grid-row: 1;
-    grid-column: 1;
-    background-image: url("../images/braggcreek.png");
-    min-width: 100px;
-    max-width: 300px;
-    min-height: 75px;
-    max-height: 200px;
-    background-size: contain;
-    background-position: center; /* This centers the background image */
-    background-repeat: no-repeat; /* This prevents the image from repeating */
-    justify-self: left;
-  }
+      grid-row: 1;
+      grid-column: 1;
+      background-image: url("../images/braggcreek.png");
+      min-width: 100px;
+      max-width: 300px;
+      min-height: 75px;
+      max-height: 200px;
+      background-size: contain;
+      background-position: center; /* This centers the background image */
+      background-repeat: no-repeat; /* This prevents the image from repeating */
+      justify-self: left;
+    }
+
   #hero-img {
-    padding-bottom: 45em;
-  }
+      padding-bottom: 45em;
+    }
+
   nav {
-    min-width: 500px;
-  }
+      min-width: 500px;
+    }
+
   .full-width {
-    grid-column: 2;
-    grid-column: span 4; /* Span across two columns */
-    grid-row: 1;
-  }
+      grid-column: 2;
+      grid-column: span 4; /* Span across two columns */
+      grid-row: 1;
+    }
 
   .wrapper-item {
-    grid-column: 2;
-  }
+      grid-column: 2;
+    }
 
   .navigation {
-    display: flex;
-    justify-content: space-around;
-  }
+      display: flex;
+      justify-content: space-around;
+    }
 
-.main-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 1em;
-    padding: 1em;
-  }
+  .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 1em;
+      padding: 1em;
+    }
 
   .main-colimn {
-    grid-column:span 4;
-    grid-row: 1;
+      grid-column:span 4;
+      grid-row: 1;
+    }
+  .main-card{
+      grid-row: span 2;
   }
-.main-card{
-    grid-row: span 2;
-}
 
   .side-column{
-    grid-column: 1;
-    grid-row: 1/6;
-  }
+      grid-column: 1;
+      grid-row: 1/6;
+    }
   .side-card {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    align-items: center;
-}
+      align-items: center;
+  }
 }
