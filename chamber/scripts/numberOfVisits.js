@@ -1,23 +1,23 @@
 let visitElement = document.getElementById('visits');
 let message = document.getElementById('visit-message');
 
-const currentDay = new Date().getDay();
+let currentDate = new Date();
+let formattedDate = `${currentDate.getMonth() + 1}-${currentDate.getDate()}`; // Format as MM-DD
 
 function displayNumberOfVisits() {
     visitElement.innerHTML = getNumberOfVisits();
 }
+
 function displayMessage() {
     var lastVisit = localStorage.getItem('lastVisit');
-    if (!lastVisit) {
-        lastVisit = currentDay;
+    console.log(`last day visited ${lastVisit}`);
+    if (lastVisit === null) {
+        message.innerHTML = "Welcome! Let us know if you have any questions.";
         setNewDate();
-        message.html = "Welcome! Let us know if you have any questions.";
-    }
-    else if (lastVisit == currentDay) {
+    } else if (lastVisit === formattedDate) {
         message.innerHTML = "Back so soon! Awesome!";
-    }
-    else {
-        message.innerHTML = `You last visited ${lastVisit} days ago.`;
+    } else {
+        message.innerHTML = `You last visited on ${lastVisit}.`;
     }
 }
 
@@ -32,11 +32,8 @@ function getNumberOfVisits() {
 }
 
 function setNewDate() {
-    
-    localStorage.setItem('lastVisit', currentDay);
+    localStorage.setItem('lastVisit', formattedDate);
 }
 
-
-setNewDate();
 displayNumberOfVisits();
 displayMessage();
