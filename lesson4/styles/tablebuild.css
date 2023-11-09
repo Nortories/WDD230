@@ -1,0 +1,42 @@
+caption {
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th {
+    padding: 5px;
+}
+
+table th:nth-child(n+2) {
+    background-color: rgb(71, 77, 77);
+}
+
+thead {
+    background-color: black;
+    color: aliceblue;
+    border-color: black;
+}
+
+thead th {
+    padding: 5px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: grey;
+}
+
+th~td {
+    border: 1px solid rgb(235, 232, 232);
+}
+
+th:not(:first-child) {
+    border: 1px solid rgb(235, 232, 232);
+}
+
+tbody th{
+    border: 1px solid rgb(235, 232, 232);
+}
