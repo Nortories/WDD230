@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Joshua Sooaemalelagi">
-  <meta name="description" content="This is a portfolio site for Joshua Sooaemalelagi in WDD 230" />
+  <meta name="description" content="Bragg-Creek chamber sign up form" />
 
   <!-- OG meta for social media -->
   <meta property="og:title" content="Bragg-Creek Chamber Form">
-  <meta property="og:description" content="This is a portfolio site for Joshua Sooaemalelagi in WDD 230">
+  <meta property="og:description" content="Bragg-Creek chamber sign up form">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://nortories.github.io/wdd230/images/headshot.png">
   <meta property="og:image:width" content="136">
@@ -67,17 +67,20 @@
             <label>Phone<input type="tel" name="phone" id="phone" placeholder="123123555" required /></label>
             <label>Business/Organizations Name<input type="text" name="business" id="business"
                 placeholder="(ex. Amazon, Meta, Google)" required /></label>
-            <label>Select Membership<select name="membership" id="membership">
-                <option value="NP">NP Membership (No Fee)</option>
-                <option value="Bronze">Bronze Membership</option>
-                <option value="Silver">Silver Membership</option>
-                <option value="Gold">Gold Membership</option>
-              </select></label>
-            <label>
-              <input type="checkbox" name="terms" id="terms" required />I agree to the terms and conditions
-            </label>
-            <input type="hidden" name="timestamp" id="timestamp" />
-            <label><input type="submit" value="Join Today!" id="submitBtn" class="submitJoin" /></label>
+            <!-- a business/organization's description, text area, name, and id -->
+            <label>Business/Organizations Description<textarea name="description" id="description" cols="30"
+                rows="10"></textarea>
+              <label>Select Membership<select name="membership" id="membership">
+                  <option value="NP">NP Membership (No Fee)</option>
+                  <option value="Bronze">Bronze Membership</option>
+                  <option value="Silver">Silver Membership</option>
+                  <option value="Gold">Gold Membership</option>
+                </select></label>
+              <label>
+                <input type="checkbox" name="terms" id="terms" required />I agree to the terms and conditions
+              </label>
+              <input type="hidden" name="timestamp" id="timestamp" />
+              <label><input type="submit" value="Join Today!" id="submitBtn" class="submitJoin" /></label>
 
           </div>
 
