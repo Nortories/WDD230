@@ -1,0 +1,75 @@
+:root {
+    --main-btn-color: #88d498;
+    --main-display: block;
+    --main-padding: 1rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  p {
+    font-family: "Raleway", sans-serif;
+  }
+  form {
+    margin: 10px 10px;
+    text-align: left;
+  }
+  
+  legend {
+    margin: 20px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  label {
+    display: var(--main-display);
+    text-align: left;
+    padding: 10px 20px;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+  
+  input {
+    display: var(--main-display);
+    height: 25px;
+    width: 300px;
+    padding: var(--main-padding);
+  }
+  
+  input#submitBtn {
+    border: none;
+    background: rgb(47, 224, 255);
+    border-radius: 8px;
+    text-align: center;
+    line-height: 0px;
+    margin-top: 5px;
+    width: 200px;
+    transition: 0.2s ease;
+  }
+  
+  input#submitBtn:hover {
+    background: #7186ae;
+    cursor: pointer;
+  }
+  
+  #rangevalues {
+    display: flex;
+    margin: 0 0 0 25px;
+    width: 200px;
+    color: antiquewhite;
+  }
+  
+  #rangevalues option {
+    flex: 1 1 auto;
+    padding-left: 16px;
+    margin: 1px;
+  }
