@@ -1,0 +1,34 @@
+{
+    "ward": "1st ward",
+    "families": [
+      {
+        "familyName": "Smith",
+        "moveInDate": "2021-08-01",
+        "numberOfPeople": 4,
+        "visitedByBishopric": false,
+        "familyMembers": [
+          {
+            "name": "John Smith",
+            "gender": "male",
+            "birthdate": "1990-01-01"
+          },
+          {
+            "name": "Jane Smith",
+            "gender": "female",
+            "birthdate": "1992-05-15"
+          },
+          {
+            "name": "Jack Smith",
+            "gender": "male",
+            "birthdate": "2015-11-20"
+          },
+          {
+            "name": "Jill Smith",
+            "gender": "female",
+            "birthdate": "2018-03-10"
+          }
+        ]
+      }
+    ]
+  }
+  

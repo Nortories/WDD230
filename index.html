@@ -54,7 +54,7 @@
         <div class="hero">
             <picture>
                 <source media="(max-width: 400px)" srcset="./images/SLC-temple-small.webp">
-                <img src="./images/SLC-temple-large.webp" alt="hero-image" id="hero-image" loading="lazy" width="1000" height="1000">
+                <img src="./images/SLC-temple-large.webp" alt="hero-image" id="hero-image" loading="lazy" width="400" height="400">
             </picture>
             <div class="herolabel">
                 <p>SLC Temple</p>
@@ -65,18 +65,13 @@
         <div class="main-colimn">
             <section class="card dark-mode">
                 <h3>Learning Activities</h3>
-                <ul>
-                    <li><a  class = "dark-mode" href="./lesson2/lesson2.html">Lesson 2</a></li>
-                    <li><a  class = "dark-mode" href="./lesson3/index.html">Lesson 3</a></li>
-                    <li><a  class = "dark-mode" href="./lesson4/index.html">Lesson 4</a></li>
-                    <li><a  class = "dark-mode" href="./lesson5/index.html">Lesson 5</a></li>
-                    <li><a  class = "dark-mode" href="./lesson6/index.html">Lesson 6</a></li>
-                </ul>
+                <div id="linksList"></div>
             </section>
             <section class="card dark-mode" id="information">
                  <h3>Weather in <span id="city-name">Loading</span></h3>
                 <ul id="weather-container" class="weather-title">              
                     <li>Temperature: <span id="temperature">Loading...</span>°F</li>
+                    <li id="weather-icon"></li>
                     <li>Description: <span id="description">Loading...</span></li>
                     <li>Visit Count: <span id="visits">Loading...</span></li>
                 </ul>

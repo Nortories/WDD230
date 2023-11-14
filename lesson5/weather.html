@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Call</title>
+</head>
+
+<body>
+    <main>
+        <section class="card dark-mode" id="information">
+            <h3>Weather in <span id="city-name">Loading</span></h3>
+            <ul id="weather-container" class="weather-title">
+                <li>Temperature: <span id="temperature">Loading...</span>°F</li>
+                <li id="weather-icon"></li>
+                <li>Description: <span id="description">Loading...</span></li>
+            </ul>
+        </section>
+    </main>
+</body>
+<script src="./scripts/openWeatherMap.js"></script>
+
+</html>

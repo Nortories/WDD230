@@ -1,0 +1,85 @@
+
+{
+  "lessons": [
+    {
+      "lesson": "Lesson 2",
+      "links": [
+        {
+          "url": "../lesson2/index.html",
+          "title": "Lesson 2 Home"
+        },
+        {
+          "url": "../lesson2/design.html",
+          "title": "Design Principles"
+        },
+        {
+          "url": "../lesson2/social-media-meta.html",
+          "title": "social-media-meta"
+        },
+        {
+          "url": "../lesson2/hamburger.html",
+          "title": "Hamburger Menu"
+        },
+        {
+          "url": "../lesson2/bom.html",
+          "title": "DOM Manipulation"
+        },
+        {
+          "url": "../lesson2/enhancments.html",
+          "title": "Page Enhancements"
+        }
+      ]
+    },
+    {
+        "lesson" : "Lesson 3",
+        "links" : [
+            {
+                "url" : "../lesson3/index.html",
+                "title" : "Lesson 3 Home"
+            },
+            {
+                "url" : "../lesson3/bom.html",
+                "title" : "BOM"
+            },
+            {
+                "url" : "../lesson3/lazy-load.html",
+                "title" : "Lazy Loading"
+            },
+            {
+                "url" : "../lesson3/responsive-images.html",
+                "title" : "Responsive Images"
+            }
+        ]
+    },
+    {
+        "lesson" : "Lesson 4",
+        "links" :[
+            {
+                "url" : "../lesson4/index.html",
+                "title" : "Lesson 4 Home"
+            },
+            {
+                "url" : "../lesson4/tablebuild.html",
+                "title" : "Table Build"
+            }
+        ]
+    },
+    {
+        "lesson" : "Lesson 5",
+        "links" :[
+            {
+                "url" : "../lesson5/index.html",
+                "title" : "Lesson 5 Home"
+            },
+            {
+                "url" : "../lesson5/prophets.html",
+                "title" : "Prophets"
+            },
+            {
+                "url" : "../lesson5/weather.html",
+                "title" : "Weather"
+            }
+        ]
+    }
+  ]
+}
