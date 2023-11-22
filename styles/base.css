@@ -187,6 +187,8 @@ main h2 {
   padding: 0;
 }
 
+
+
 .card li {
   padding: 1em;
 }
@@ -268,4 +270,17 @@ footer p {
   padding: 1em;
   border-radius: 10px;
   margin-top: 1em;
+}
+
+.lesson-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lesson-links a {
+  background-color: rgb(164, 164, 197);
+  border-radius: 5px;
+  padding: 0.5em;
 }
