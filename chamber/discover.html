@@ -31,7 +31,7 @@
 </head>
 
 
-<body>
+<body class="background">
     <div id="hero-img">
         <div class="wrapper">
             <div class="wrapper-item" id="logo"></div>
@@ -121,14 +121,17 @@
                     <a href="./join.html">Learn More</a>
                 </section>
 
-                <section class="side-card" id="local-weather">
-                    <h2>Local Weather</h2>
+                <div class=" card-content">
+                    <section class="side-card" id="weather-card">
                         <h3>Weather in <span id="city-name">Loading</span></h3>
-                        <ul>
-                            <li>Temperature: <span id="temperature">Loading...</span>°F</li>
-                            <li>Description: <span id="description">Loading...</span></li>
+                        <ul id="weather-container" class="weather-title">
+                            <li><span id="weather-icon">Temperature:</span> <span id="temperature">Loading...</span>°F
+                                <div id="description">Loading...</div>
+                            </li>
+                            <li id="three-day-forecast"></li>
                         </ul>
-             </section>
+                    </section>
+                </div>
 
                 <section class="side-card" id="site-views">
                     <h2>Welcome</h2>
@@ -143,7 +146,6 @@
             </div>
         </div>
     </main>
-    <div class="lazyloaded"></div>
     <footer>
         <p>Joshua Sooaemalelagi &copy; 2023 Bragg-Creek Chamber of Commerce</p>
         <p>School project for WDD 230 BYU-I | Updated: <span id="lastUpdated"> </span></p>

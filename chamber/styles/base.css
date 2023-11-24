@@ -11,10 +11,10 @@ nav {
   margin: 0;
   padding: 0;
 }
-h1{
-    color: #cecb28;
-    text-shadow: #ffffff 0px 0px 35px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1 {
+  color: #cecb28;
+  text-shadow: #ffffff 0px 0px 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .wrapper {
@@ -33,18 +33,20 @@ body {
 }
 
 #hero-img {
-  background-image: url("../images/braggcreek-hd.jpg");
+  background-image: url("../images/waterfall.webp");
   background-size: 101% 100%; /* This stretches the image to fit the full width and height */
   background-position: center; /* This centers the background image */
   background-repeat: no-repeat; /* This prevents the image from repeating */
-  margin: 1em;
+  margin: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+
   max-width: 100%;
+  padding-top: 5em;
   padding-bottom: 15em;
-  border: 3px solid #ddd;
+  border: 5px solid #000000;
   border-radius: 15px;
 }
-
-
 
 /* Style the header */
 header {
@@ -60,11 +62,18 @@ nav ul {
 }
 
 nav a {
-  color: #007bff;
+  color: #00ff0d;
   display: block;
   text-decoration: none;
   font-size: larger;
   font-family: "Kanit", sans-serif;
+  padding: 1em;
+}
+.navigation > li {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
 }
 
 li {
@@ -91,14 +100,16 @@ h2 {
   color: #ff5733;
 }
 
-main{
+main {
   /*round off the background corners*/
   border-radius: 15px;
   padding-top: 1em;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .main-card {
+  background-color: #fff;
+  border: 1px solid #912626;
   position: relative;
 }
 /* This is the normal state for the <p> tag */
@@ -107,13 +118,23 @@ main{
   transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
+.side-card {
+  background-color: #fff;
+  border: 1px solid #912626;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  align-items: center;
+}
+
 .centered-picture {
-  display: flex;           /* Establishes flex container */
+  display: flex; /* Establishes flex container */
   justify-content: center; /* Centers horizontally */
-  align-items: center;     /* Centers vertically */
-  height: 300px;           /* Set to your desired container height */
-  width: 100%;             /* Set to your desired container width */
-  overflow: hidden;        /* In case the image is larger than the container */
+  align-items: center; /* Centers vertically */
+  height: 300px; /* Set to your desired container height */
+  width: 100%; /* Set to your desired container width */
+  overflow: hidden; /* In case the image is larger than the container */
 }
 
 .centered-picture img {
@@ -129,14 +150,27 @@ picture {
 /* Style individual sections */
 section {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #912626;
+  border-radius: 5px;
+  margin: 20px;
+}
+section h2 {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+#weather-card {
+  color: #ff5733;
+  background-color: #fff;
+  border: 1px solid #912626;
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
+  height: 100%;
+  text-align: center;
 }
-section h2{
-    text-align: center;
-    padding-bottom: 2em;
+#weather-container {
+  list-style: none;
 }
 
 /* Style the footer */
@@ -145,10 +179,9 @@ footer {
   text-align: center;
   padding: 10px;
 }
-footer p{
-    color: #ffffff;
+footer p {
+  color: #ffffff;
 }
-
 
 @media (max-width: 771px) {
   .wrapper-item {
@@ -156,6 +189,7 @@ footer p{
     grid-column: 1/2;
     padding-left: 2em;
   }
+
 
   #menu {
     font-size: 2rem;
@@ -174,18 +208,16 @@ footer p{
   }
 }
 
-.lazyloaded {
-    position: absolute;
-    min-height: 300px;
-    padding-bottom: 100em;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://visitbraggcreek.com/wp-content/themes/truemarket/assets/dist/images/illustration-wood-lillies.png'); /* Replace with your image path */
-    background-size:contain; 
-    z-index: -1;
-    mix-blend-mode: multiply;
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/background.webp");
+  background-size: cover;
+  background-position: center;
+  z-index: -10;
 }
 
 form {
@@ -259,87 +291,100 @@ select {
   color: black;
 }
 
-
-
-
-
-section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #eee;
-}
-
 .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-	align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
+  align-items: center;
 }
 
 .grid section {
-	text-align: center;
+  text-align: center;
 }
 
 .grid img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px #333;
 }
 
 .grid section > * {
-	margin: 0.1rem;
+  margin: 0.1rem;
 }
 
 .grid h3 {
-	font-family: "Caveat", cursive;
+  font-family: "Caveat", cursive;
 }
 
 .list {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 1rem;
+  padding: 0.25rem;
 }
 
 .list section > * {
-	margin: 0 1rem;
+  margin: 1rem;
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+  display: none; /* smaller viewports only */
 }
 
 .list section h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+  background-color: #bed;
 }
 
 section h3 {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 section p {
-	font-weight: 600;
-	font-size: smaller;
+  font-weight: 600;
+  font-size: smaller;
 }
 
 section a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 0.85rem;
+  color: navy;
+  letter-spacing: 1.1pt;
+  padding: 1rem;
 }
 
 #directory-cards img {
-	height: 300px;
+  height: 300px;
   width: 300px;
-	max-width: 100%; /* Images are jerks - Seattle*/
+  max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+p {
+  padding: 2rem;
+}
+
+h2 {
+  padding-top: 1rem;
+}
+article section {
+  height: 97%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+article section li {
+  list-style: none;
+  word-wrap: break-word;
+}
+article section ul {
+  width: 100%;
 }

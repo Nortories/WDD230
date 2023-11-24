@@ -1,9 +1,9 @@
 [
   {
     "name": "Wilderness Trails Hunting",
-      "description": "Expert guided hunting experiences in the heart of nature",
-      "logo": "https://picsum.photos/id/543/300/300",
-      "contact": {
+    "description": "Expert guided hunting experiences in the heart of nature",
+    "logo": "https://picsum.photos/id/543/300/300",
+    "contact": {
       "email": "contact@wildernesstrailshunting.com",
       "phone": "555-789-0123",
       "address": "452 Forest Rd, Mountain View, State, 98765",
@@ -13,10 +13,10 @@
     }
   },
   {
-      "name": "Harbor Lifts & Cranes",
-      "description": "Specializing in marine lifting solutions and boat crane services",
-      "logo": "https://picsum.photos/id/617/300/300",
-      "contact": {
+    "name": "Harbor Lifts & Cranes",
+    "description": "Specializing in marine lifting solutions and boat crane services",
+    "logo": "https://picsum.photos/id/617/300/300",
+    "contact": {
       "email": "info@harborliftsandcranes.com",
       "phone": "555-234-5678",
       "address": "789 Dockside Ave, Port City, State, 12345",
@@ -26,16 +26,42 @@
     }
   },
   {
-      "name": "TechFix Laptop Repair",
-      "description": "Professional laptop repair services for all major brands",
-      "logo": "https://picsum.photos/id/370/300/300",
-      "contact": {
+    "name": "TechFix Laptop Repair",
+    "description": "Professional laptop repair services for all major brands",
+    "logo": "https://picsum.photos/id/370/300/300",
+    "contact": {
       "email": "support@techfixlaptoprepair.com",
       "phone": "555-321-0987",
       "address": "101 Technology Drive, Tech City, State, 45678",
       "website": "https://www.techfixlaptoprepair.com",
       "membershipLevel": "Premium",
       "otherInfo": "Fast, reliable, and affordable laptop repair solutions"
+    }
+  },
+  {
+    "name": "New Member 1",
+    "description": "Description of New Member 1",
+    "logo": "https://picsum.photos/id/123/300/300",
+    "contact": {
+      "email": "newmember1@example.com",
+      "phone": "555-111-1111",
+      "address": "123 Main St, City, State, 12345",
+      "website": "https://www.newmember1.com",
+      "membershipLevel": "Bronze",
+      "otherInfo": "Additional information about New Member 1"
+    }
+  },
+  {
+    "name": "New Member 2",
+    "description": "Description of New Member 2",
+    "logo": "https://picsum.photos/id/456/300/300",
+    "contact": {
+      "email": "newmember2@example.com",
+      "phone": "555-222-2222",
+      "address": "456 Elm St, City, State, 67890",
+      "website": "https://www.newmember2.com",
+      "membershipLevel": "Bronze",
+      "otherInfo": "Additional information about New Member 2"
     }
   }
 ]
