@@ -8,7 +8,7 @@
       "phone": "555-789-0123",
       "address": "452 Forest Rd, Mountain View, State, 98765",
       "website": "https://www.wildernesstrailshunting.com",
-      "membershipLevel": "Platinum",
+      "membershipLevel": "Silver",
       "otherInfo": "Offering a variety of hunting packages for beginners and seasoned hunters"
     }
   },
@@ -21,7 +21,7 @@
       "phone": "555-234-5678",
       "address": "789 Dockside Ave, Port City, State, 12345",
       "website": "https://www.harborliftsandcranes.com",
-      "membershipLevel": "Elite",
+      "membershipLevel": "Gold",
       "otherInfo": "State-of-the-art crane technology for all your marine lifting needs"
     }
   },
@@ -34,7 +34,7 @@
       "phone": "555-321-0987",
       "address": "101 Technology Drive, Tech City, State, 45678",
       "website": "https://www.techfixlaptoprepair.com",
-      "membershipLevel": "Premium",
+      "membershipLevel": "Silver",
       "otherInfo": "Fast, reliable, and affordable laptop repair solutions"
     }
   },
