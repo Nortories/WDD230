@@ -1,7 +1,7 @@
 
 # Web Development Frontend Project (wdd230)
 
-##Hosted On Github-Pages
+## Hosted On Github-Pages
 
 @https://nortories.github.io/Wed-dev-Frontend-1/
 
